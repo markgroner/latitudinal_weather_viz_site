@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cloudiness Analysis</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href=".\yeti.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <navbar class="navbar">
+      <header class="header">
+        <h1>Latitudinal Weather Analysis</h1>
+      </header>
+      <ul class="nav nav-pills">
+        <li>
+          <a href=".\index.html">Home</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphs
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href=".\temperature.html"> Temperature </a></li>
+            <li><a href=".\humitidy.html"> Humidity </a></li>
+            <li><a href=".\cloudniess.html"> Cloudiness </a></li>
+            <li><a href=".\wind-speed.html"> Wind Speed </a></li>
+          </ul>
+        </li>
+        <!-- <li>
+          <select id="nav-select">
+            <option value="home">Graphs</option>
+            <option value="about">Temperature</option>
+            <option value="portfolio">Humidity</option>
+            <option value="contact">Cloudiness</option>
+            <option value="contact">Wind Speed</option>
+          </select>
+        </li> -->
+        <li>
+          <a href=".\comparison.html">Comparison</a>
+        </li>
+        <li>
+          <a href=".\data.html">Data</a>
+        </li>
+      </ul>
+    <main>
+      <h2> Graph Comparison </h2>
+      <div class="row">
+        <box>
+          <center> <h4> Max Temperature </h4> </center>
+          <a href=".\temperature.html">
+            <img border="0" alt="max_temp" src=".\project_viz\Temperature (F) 11_18_2017.png">
+          </a>
+        </box>
+        <box>
+          <center> <h4> Humidity </h4> </center>
+          <a href=".\humidity.html">
+            <img border="0" alt="humidity" src=".\project_viz\Humidity (%) 11_18_2017.png">
+          </a>
+        </box>
+      </div>
+      <div class="row">
+        <box>
+          <center> <h4> Cloud Coverage </h4> </center>
+          <a href=".\cloudiness.html">
+            <img border="0" alt="cloudiness" src=".\project_viz\Cloudiness (%) 11_18_2017.png">
+          </a>
+        </box>
+        <box>
+          <center> <h4> Wind Speed </h4> </center>
+          <a href=".\wind-speed.html">
+            <img border="0" alt="wind-speed" src=".\project_viz\Wind Speed (mph) 11_18_2017.png">
+          </a>
+        </box>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
