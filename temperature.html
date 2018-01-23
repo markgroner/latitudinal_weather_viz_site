@@ -1,62 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title> Temperature Analysis </title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="yeti.css">
-</head>
+  <head>
 
-<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Data Analytics Weather Project">
+    <meta name="author" content="Mark Groner">
 
-  <div class="container">
-    <navbar class="navbar">
-      <header class="header">
-        <h1> Latitudinal Weather Analysis </h1>
-      </header>
-      <ul class="nav nav-pills">
-        <li>
-          <a href=".\index.html"> Home </a>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Graphs
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href=".\temperature.html"> Temperature </a></li>
-            <li><a href=".\humitidyex.html"> Humidity </a></li>
-            <li><a href=".\cloudniess.html"> Cloudiness </a></li>
-            <li><a href=".\wind-speed.html"> Wind Speed </a></li>
+    <title>Latitudinal Weather Analysis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="yeti.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 62px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href=".\index.html"> Latitudinal Weather Analysis </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href=".\index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Graphs and Analysis</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item active" href=".\temperature.html">Temperature</a>
+                <a class="dropdown-item" href=".\humidity.html">Humidity</a>
+                <a class="dropdown-item" href=".\cloudiness.html">Cloud Coverage</a>
+                <a class="dropdown-item" href=".\wind-speed.html">Wind Speed</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">All Graphs</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".\data.html">Data</a>
+            </li>
           </ul>
-        </li>
-        <!-- <li>
-          <select id="nav-select">
-            <option value="home">Graphs</option>
-            <option value="about">Temperature</option>
-            <option value="portfolio">Humidity</option>
-            <option value="contact">Cloudiness</option>
-            <option value="contact">Wind Speed</option>
-          </select>
-        </li> -->
-        <li>
-          <a href=".\comparison.html"> Comparison </a>
-        </li>
-        <li>
-          <a href=".\data.html"> Data </a>
-        </li>
-      </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-7 wrapped-box">
+          <h2> Max Temperature Analysis </h2>
+          <hr class="hr-data-comparison">
+          <center>
+            <img class="analysis-plot" border="0" alt="max_temp" src=".\project_viz\temperature.png" align="middle">
+          </center>
+          <p>
+            This plot shows an inverse relationship between distance from the equator
+            and max temperature.  Another interesting observation is that there are
+            signicantly more cities in the northern hempisphere.  The relationship
+            between distance from the equator and maximum temperature also appears
+            to be weaker in the southern hemisphere.
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-1"></div>
+        <div class="row side-plots-buffer"></div>
+        <div class="col-xs-12 col-md-4 wrapped-box side-plots">
+          <div class="row">
+            <h4 class="move-header-left"> Analysis and Visualizations </h4>
+            <hr>
+          </div>
+          <div class="col-xs-6 move-image-left">
+            <a href=".\temperature.html">
+              <img class="side-grid-graphs current-plot" border="0" alt="max_temp" src="project_viz\temperature.png">
+            </a>
+            <a href=".\cloudiness.html">
+              <img class="side-grid-graphs" border="0" alt="cloudiness" src="project_viz\cloudiness.png">
+            </a>
+          </div>
+          <div class="col-xs-6 move-image-left">
+            <a href=".\humidity.html">
+              <img class="side-grid-graphs" border="0" alt="humidity" src="project_viz\humidity.png">
+            </a>
+            <a href=".\wind-speed.html">
+              <img class="side-grid-graphs" border="0" alt="wind-speed" src="project_viz\wind-speed.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
     <main>
-      <h2> Max Temperature Analysis </h2>
-      <center>
-        <img border="0" alt="max_temp" src=".\project_viz\temperature.png" width="600" align="middle">
-      </center>
-      <p>
-        This plot shows an inverse relationship between distance from the equator
-        and max temperature.  Another interesting observation is that there are
-        signicantly more cities in the northern hempisphere.  The relationship
-        between distance from the equator and maximum temperature also appears
-        to be weaker in the southern hemisphere.
-      </p>
+
     </main>
   </div>
 

@@ -61,6 +61,18 @@ hr {
   text-align: center;
 }
 
+
+.analysis-plot {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.current-plot {
+  border-radius: 5px;
+  border: 1px solid #222;
+
+}
+
 .centered-plots {
   display: block;
   margin-left: auto;
